@@ -24,7 +24,7 @@ function setup(){
      rockgroup=createGroup()
      bamboGroup=createGroup()
      score=0
-      panda.debug=true
+      
      panda.setCollider("circle",0,0,40)  
      gameOver=createSprite(displayWidth/2,displayHeight/2)
      Restart=createSprite(displayWidth/2,displayHeight/2+70) 
@@ -47,7 +47,7 @@ function draw(){
       ground.x=ground.width/2
 
     }
-    if(keyDown("space")&&panda.y>=50){ 
+    if(keyDown("space")&&panda.y>=displayHeight/2){ 
         panda.velocityY=-10 
     }
         panda.velocityY=panda.velocityY+1   
